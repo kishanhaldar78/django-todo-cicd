@@ -6,7 +6,9 @@ RUN pip install setuptools
 
 RUN apt-get update && apt-get install -y python3-distutils
 
-RUN pip install django==3.2
+RUN pip install legacy-cgi
+
+RUN pip install django==3.2 
 
 COPY . .
 
